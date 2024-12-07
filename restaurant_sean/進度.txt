@@ -1,0 +1,15 @@
+1206
+
+專案環境：springboot+mysql+mybatisplus
+資料夾名稱：restaurant_sean
+
+使用spring initializr生成專案時，應加入dependencies：
+
+網頁自動加入dependency：
+Spring Web
+Spring Boot DevTools
+MySQL Driver
+
+已手動加入dependency：
+Spring Boot Configuration Processor
+MyBatis-Plus Starter

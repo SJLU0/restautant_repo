@@ -1,0 +1,18 @@
+spring:
+  
+  datasource:
+    #連接pizza_restaurant資料庫
+    url: jdbc:mysql://localhost:3306/pizza_restaurant?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Taipei
+    username: root 
+    password: 11111111 #填自己 MySQL pwd
+    driver-class-name: com.mysql.cj.jdbc.Driver #MySQL 8.0 及更高版本要寫這個
+# JSP 配置
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+mybatis-plus:
+  mapper-locations: classpath:/mappers/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
